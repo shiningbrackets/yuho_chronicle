@@ -1,0 +1,313 @@
+/* =========================================================
+   유호 · Name Story — 이름 이야기
+   ---------------------------------------------------------
+   Loaded after css/style.css. Reuses its tokens and adds
+   the name story layout only.
+   ========================================================= */
+
+/* ---------- Hero ---------- */
+
+.ns-hero {
+  padding: clamp(72px, 13vh, 120px) 22px clamp(44px, 7vh, 80px);
+  text-align: center;
+}
+
+.ns-hero .section-label {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.ns-hero__title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(3rem, 12vw, 5.4rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+}
+
+.ns-hero__sub {
+  max-width: 500px;
+  margin: 26px auto 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 2;
+}
+
+/* ---------- Section ---------- */
+
+.ns-section {
+  padding: clamp(48px, 8vh, 80px) 22px;
+}
+
+.ns-section--alt {
+  background: var(--card);
+}
+
+.ns-section__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.ns-section__inner--center {
+  text-align: center;
+}
+
+.ns-section__title {
+  margin: 0 0 40px;
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* ---------- Prose ---------- */
+
+.ns-prose {
+  margin-bottom: 36px;
+}
+
+.ns-prose h3 {
+  margin: 0 0 16px;
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ns-prose p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.95;
+}
+
+.ns-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.ns-prose strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.ns-prose--note {
+  padding: 24px 28px;
+  border-left: 2px solid var(--accent);
+  background: rgba(191, 174, 147, 0.06);
+  border-radius: 0 6px 6px 0;
+}
+
+/* ---------- Characters ---------- */
+
+.ns-chars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.ns-char {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 28px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.ns-char__hanja {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 32px;
+  color: var(--accent);
+  background: rgba(191, 174, 147, 0.08);
+  border-radius: 8px;
+}
+
+.ns-char__name {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.ns-char__name strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.ns-char__desc {
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ---------- Quote ---------- */
+
+.ns-quote {
+  margin: 0;
+  padding: 32px 28px;
+  border: none;
+  background: rgba(191, 174, 147, 0.06);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.ns-quote p {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  line-height: 1.8;
+}
+
+.ns-quote__small {
+  margin-top: 16px !important;
+  color: var(--muted) !important;
+  font-family: var(--sans) !important;
+  font-size: 14px !important;
+}
+
+/* ---------- Saju ---------- */
+
+.ns-saju {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.ns-saju__item {
+  padding: 20px 24px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.ns-saju__item h3 {
+  margin: 0 0 4px;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ns-saju__info {
+  margin: 0 0 8px;
+  color: var(--faint);
+  font-size: 13px;
+  font-family: var(--serif);
+  letter-spacing: 0.1em;
+}
+
+.ns-saju__desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ---------- Dream ---------- */
+
+.ns-dream {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+.ns-dream__card {
+  padding: 28px 24px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.ns-dream__card h3 {
+  margin: 0 0 14px;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ns-dream__desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* ---------- Closing ---------- */
+
+.ns-closing__text {
+  max-width: 480px;
+  margin: 24px auto 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 2;
+}
+
+.ns-closing__date {
+  margin: 40px 0 0;
+  color: var(--faint);
+  font-family: var(--serif);
+  font-size: 14px;
+  letter-spacing: 0.18em;
+}
+
+/* ---------- Footer ---------- */
+
+.name-story__footer {
+  padding: 0 22px calc(env(safe-area-inset-bottom) + 46px);
+  text-align: center;
+}
+
+.name-story__footer p {
+  margin: 0;
+  color: var(--faint);
+  font-family: var(--serif);
+  font-size: 14px;
+  letter-spacing: 0.12em;
+}
+
+/* ---------- Back link ---------- */
+
+.ns-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ns-back:hover {
+  color: var(--text);
+}
+
+.ns-back svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Mobile adjustments ---------- */
+
+@media (max-width: 600px) {
+  .ns-char {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ns-dream {
+    grid-template-columns: 1fr;
+  }
+}

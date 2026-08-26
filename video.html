@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>유호 · 성장 영상</title>
+    <meta name="description" content="유호의 첫 생일을 맞아 준비한 성장 영상입니다." />
+    <meta name="robots" content="index, follow" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./fonts/CormorantGaramond-Latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Pretendard-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <main id="main" class="page">
+      <section class="video-page" aria-labelledby="video-title">
+        <div class="video-page__inner">
+          <h1 id="video-title" class="video-page__title">유호 성장 영상</h1>
+          <p class="video-page__sub">2025.08.17 — 태어나서 첫 생일까지</p>
+
+          <div class="video-page__player">
+            <video
+              class="video-page__video"
+              controls
+              playsinline
+              preload="metadata"
+              poster="./images/yuho/hero2-poster.webp"
+            >
+              <source src="./videos/yuho-growth.mp4" type="video/mp4" />
+              브라우저가 비디오를 지원하지 않습니다.
+            </video>
+            <button class="video-page__fullscreen" type="button" aria-label="전체화면" data-fullscreen>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a class="footer__back" href="./index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          돌아가기
+        </a>
+        <p>유호 · Growth Video · 2026</p>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        var btn = document.querySelector("[data-fullscreen]");
+        var video = document.querySelector(".video-page__video");
+        if (!btn || !video) return;
+        btn.addEventListener("click", function () {
+          if (video.requestFullscreen) video.requestFullscreen();
+          else if (video.webkitRequestFullscreen) video.webkitRequestFullscreen();
+          else if (video.msRequestFullscreen) video.msRequestFullscreen();
+        });
+      })();
+    </script>
+  </body>
+</html>

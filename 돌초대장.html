@@ -1,0 +1,1179 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>유호 · First Birthday</title>
+    <meta name="description" content="유호의 첫 번째 생일. 2026년 8월 17일 월요일 오전 10시, 더우미제 스튜디오에서 함께합니다." />
+    <meta name="robots" content="index, follow" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="유호 · First Birthday" />
+    <meta property="og:title" content="유호 · First Birthday" />
+    <meta property="og:description" content="2026.08.17 MON · 11:30–13:30 · 더우미제 스튜디오" />
+    <meta property="og:image" content="https://shiningbrackets.github.io/yuho-first-birthday/images/thumbnail-v2.jpg" />
+    <meta property="og:image:width" content="1100" />
+    <meta property="og:image:height" content="1600" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="유호 · First Birthday" />
+    <meta name="twitter:description" content="2026.08.17 MON · 11:30–13:30 · 더우미제 스튜디오" />
+    <meta name="twitter:image" content="https://shiningbrackets.github.io/yuho-first-birthday/images/thumbnail-v2.jpg" />
+
+    <link rel="icon" href="./assets/favicon.svg?v=3" type="image/svg+xml" />
+    <link rel="preload" href="./fonts/CormorantGaramond-Latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/CormorantGaramond-LatinItalic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Pretendard-Light.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./images/yuho/hero-main-v2.webm" as="video" type="video/webm" fetchpriority="high" />
+    <link rel="preload" href="./images/yuho/hero2-poster.webp" as="image" type="image/webp" fetchpriority="high" />
+    <link rel="stylesheet" href="./css/style.css?v=3" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "유호의 첫돌",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "startDate": "2026-08-17T11:30:00+09:00",
+        "endDate": "2026-08-17T13:30:00+09:00",
+        "description": "유호의 첫 번째 생일을 가까운 가족과 함께하는 작은 자리.",
+        "location": {
+          "@type": "Place",
+          "name": "더우미제 스튜디오",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "경기도 용인시 기흥구 사은로 175 (지곡동)",
+            "addressCountry": "KR"
+          }
+        },
+        "image": "https://shiningbrackets.github.io/yuho-first-birthday/images/thumbnail-v2.jpg"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <main id="main" class="page">
+      <!-- 1. Hero -->
+      <section class="hero" aria-labelledby="hero-name" data-hero>
+        <div class="hero__media" aria-hidden="true" data-hero-media>
+          <div class="hero__loader" aria-hidden="true">
+            <div class="hero__loader-ring"></div>
+          </div>
+          <video
+            class="hero__video"
+            playsinline
+            autoplay
+            muted
+            loop
+            poster="./images/yuho/hero2-poster.webp"
+            preload="metadata"
+            data-hero-video
+          >
+            <source src="./images/yuho/hero-main-v2.webm" type="video/webm" />
+          </video>
+          <picture class="hero__fallback" aria-hidden="true">
+            <source srcset="./images/yuho/hero2-poster.webp" type="image/webp" />
+            <img
+              src="./images/yuho/hero2-poster.jpg"
+              alt=""
+              width="1400"
+              height="1900"
+              fetchpriority="high"
+              decoding="async"
+              class="hero__image"
+            />
+          </picture>
+        </div>
+
+        <header class="hero__masthead">
+          <p class="hero__wordmark" data-hero-rise>유호 <span>· First Birthday</span></p>
+          <div class="hero__controls" data-hero-rise>
+            <button class="hero__sound-btn" type="button" aria-label="소리 켜기" aria-pressed="false" data-sound-toggle>
+              <svg class="icon-sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M11 5L6 9H2v6h4l5 4V5z" />
+                <path d="M15.5 8a4.5 4.5 0 0 1 0 8" />
+                <path d="M19 4a7 7 0 0 1 0 16" />
+              </svg>
+              <svg class="icon-sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M11 5L6 9H2v6h4l5 4V5z" />
+                <line x1="11" y1="5" x2="19" y2="19" />
+              </svg>
+            </button>
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="다크 모드 전환" data-hero-rise>
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <circle cx="12" cy="12" r="4.2" />
+                <path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7" />
+              </svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                <path d="M20.2 14.1A8.2 8.2 0 0 1 9.9 3.8a8.2 8.2 0 1 0 10.3 10.3Z" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="hero__copy">
+          <p class="hero__eyebrow" data-hero-rise data-word-reveal="First Birthday">First Birthday</p>
+          <h1 id="hero-name" class="hero__name" data-hero-rise data-char-reveal>유호</h1>
+          <p class="hero__sub" data-hero-rise>one beautiful year</p>
+          <p class="hero__date" data-hero-rise>2026. 08. 17 · Monday · 11:30</p>
+        </div>
+      </section>
+
+      <!-- 2. Story -->
+      <section id="story" class="section story" aria-labelledby="story-title">
+        <div class="section__inner reveal">
+          <p class="section-label">Story</p>
+          <h2 id="story-title" class="section-title" data-line-reveal>작고 환한 한 해가, 우리에게 왔습니다</h2>
+          <p class="story__text reveal reveal--delay-1" data-line-reveal>
+            처음 만난 숨결, 손끝에 머문 온기, 매일 조금씩 달라지던 표정.
+            유호와 함께한 일 년은 서툴지만 깊은 사랑을 배우는 시간이었습니다.
+            그 고요하고 환한 하루를, 가장 가까운 가족과 함께 기억하고 싶습니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. 365 Days -->
+      <section class="section days" aria-labelledby="days-title">
+        <div class="section__inner reveal">
+          <p class="section-label">Chapter 01</p>
+          <h2 id="days-title" class="display-title" data-word-reveal="365 Days">365 Days</h2>
+          <p class="section-desc reveal reveal--delay-1">
+            열두 개의 달, 수백 개의 순간.
+            한 장의 사진과 한 줄의 기억으로
+            유호의 첫 해를 천천히 펼칩니다.
+          </p>
+        </div>
+
+        <figure class="chapter-photo reveal" data-reveal="right-up" data-photo>
+          <picture>
+            <source srcset="./images/yuho/yuho-06.webp" type="image/webp" />
+            <img
+              src="./images/yuho/yuho-06.jpg"
+              alt="스물세 번째 날의 유호"
+              width="1200"
+              height="1600"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </figure>
+      </section>
+
+      <!-- 4. Growth Timeline -->
+      <section class="section timeline" aria-labelledby="timeline-title">
+        <h2 id="timeline-title" class="visually-hidden">유호의 성장 타임라인</h2>
+
+        <article class="milestone reveal" data-reveal="left" data-photo>
+          <div class="milestone__media" data-parallax="0.08">
+            <picture>
+              <source srcset="./images/yuho/yuho-04.webp" type="image/webp" />
+              <img
+                src="./images/yuho/yuho-04.jpg"
+                alt="잠든 채 미소 짓는 신생아 유호"
+                width="1200"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="milestone__copy">
+            <p class="milestone__num" aria-hidden="true">00</p>
+            <h3 class="milestone__title" data-char-reveal>0 Month</h3>
+            <p class="milestone__text">잠든 얼굴에도 미소가 머물던, 처음 만난 그날.</p>
+          </div>
+        </article>
+
+        <article class="milestone milestone--alt reveal" data-reveal="right" data-photo>
+          <div class="milestone__media" data-parallax="0.08">
+            <picture>
+              <source srcset="./images/yuho/yuho-08.webp" type="image/webp" />
+              <img
+                src="./images/yuho/yuho-08.jpg"
+                alt="백일 기념 촬영을 한 유호"
+                width="1200"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="milestone__copy">
+            <p class="milestone__num" aria-hidden="true">03</p>
+            <h3 class="milestone__title" data-char-reveal>3 Months</h3>
+            <p class="milestone__text">백 번째 아침. 작은 토끼가 세상을 가만히 바라보던 날.</p>
+          </div>
+        </article>
+
+        <article class="milestone reveal" data-reveal="left-up" data-photo>
+          <div class="milestone__media" data-parallax="0.08">
+            <picture>
+              <source srcset="./images/yuho/yuho-09.webp" type="image/webp" />
+              <img
+                src="./images/yuho/yuho-09.jpg"
+                alt="밝게 웃고 있는 유호"
+                width="1200"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="milestone__copy">
+            <p class="milestone__num" aria-hidden="true">06</p>
+            <h3 class="milestone__title" data-char-reveal>6 Months</h3>
+            <p class="milestone__text">웃음이 소리가 되고, 하루가 더 환해지던 계절.</p>
+          </div>
+        </article>
+
+        <article class="milestone milestone--alt reveal" data-reveal="right-up" data-photo>
+          <div class="milestone__media" data-parallax="0.08">
+            <picture>
+              <source srcset="./images/yuho/yuho-02.webp" type="image/webp" />
+              <img
+                src="./images/yuho/yuho-02.jpg"
+                alt="그림책 사이로 얼굴을 내미는 유호"
+                width="1200"
+                height="1600"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="milestone__copy">
+            <p class="milestone__num" aria-hidden="true">09</p>
+            <h3 class="milestone__title" data-char-reveal>9 Months</h3>
+            <p class="milestone__text">책 사이로 얼굴을 내밀며, 세상을 탐험하기 시작한 때.</p>
+          </div>
+        </article>
+
+        <article class="milestone reveal" data-reveal="zoom" data-photo>
+          <div class="milestone__media" data-parallax="0.08">
+            <picture>
+              <source srcset="./images/yuho/g30.webp" type="image/webp" />
+              <img
+                src="./images/yuho/g30.jpg"
+                alt="여섯 번째 달의 아침, 눈을 뜨자 마주한 빛"
+                width="990"
+                height="1320"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="milestone__copy">
+            <p class="milestone__num" aria-hidden="true">12</p>
+            <h3 class="milestone__title" data-char-reveal>12 Months</h3>
+            <p class="milestone__text">한 살이 된 유호. 오늘의 주인공이 되어 웃고 있습니다.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- 5. Gallery -->
+      <section class="section gallery" aria-labelledby="gallery-title">
+        <div class="section__inner reveal">
+          <p class="section-label">Gallery</p>
+          <h2 id="gallery-title" class="display-title display-title--sm" data-char-reveal>Moments</h2>
+          <p class="section-desc">사진을 눌러 유호의 첫 해를 넘겨 보세요.</p>
+        </div>
+
+        <div class="masonry reveal reveal--delay-1" role="list" aria-label="유호의 사진 갤러리" data-masonry>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="0"
+            data-src="./images/yuho/g01.jpg"
+            data-webp="./images/yuho/g01.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g01.webp" type="image/webp" />
+              <img src="./images/yuho/g01.jpg" alt="두 번째 달, 처음으로 긴 잠에 빠진 저녁" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="1"
+            data-src="./images/yuho/g02.jpg"
+            data-webp="./images/yuho/g02.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g02.webp" type="image/webp" />
+              <img src="./images/yuho/g02.jpg" alt="첫 가을, 햇살이 이불 위로 쏟아지던 하루" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="2"
+            data-src="./images/yuho/g03.jpg"
+            data-webp="./images/yuho/g03.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g03.webp" type="image/webp" />
+              <img src="./images/yuho/g03.jpg" alt="처음으로 눈을 맞추고, 처음으로 세상을 읽던 시간" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="3"
+            data-src="./images/yuho/g04.jpg"
+            data-webp="./images/yuho/g04.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g04.webp" type="image/webp" />
+              <img src="./images/yuho/g04.jpg" alt="햇살 아래 잠든 얼굴, 가장 고요한 오후" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="4"
+            data-src="./images/yuho/g05.jpg"
+            data-webp="./images/yuho/g05.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g05.webp" type="image/webp" />
+              <img src="./images/yuho/g05.jpg" alt="백 번째 아침을 기다리던, 작고 따뜻한 밤" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="5"
+            data-src="./images/yuho/g06.jpg"
+            data-webp="./images/yuho/g06.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g06.webp" type="image/webp" />
+              <img src="./images/yuho/g06.jpg" alt="가을이 가고, 겨울이 오는 문턱의 하루" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="6"
+            data-src="./images/yuho/g07.jpg"
+            data-webp="./images/yuho/g07.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g07.webp" type="image/webp" />
+              <img src="./images/yuho/g07.jpg" alt="겨울옷 자락 사이로 잠시 머문 포근한 온기" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="7"
+            data-src="./images/yuho/g08.jpg"
+            data-webp="./images/yuho/g08.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g08.webp" type="image/webp" />
+              <img src="./images/yuho/g08.jpg" alt="새해의 첫 아침, 처음으로 지은 큰 웃음" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="8"
+            data-src="./images/yuho/g23.jpg"
+            data-webp="./images/yuho/g23.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g23.webp" type="image/webp" />
+              <img src="./images/yuho/g23.jpg" alt="무릎에 기대어, 세상보다 깊이 잠든 오후" width="760" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="9"
+            data-src="./images/yuho/g10.jpg"
+            data-webp="./images/yuho/g10.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g10.webp" type="image/webp" />
+              <img src="./images/yuho/g10.jpg" alt="봄이 문을 두드리던, 가장 조용한 아침" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="10"
+            data-src="./images/yuho/g11.jpg"
+            data-webp="./images/yuho/g11.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g11.webp" type="image/webp" />
+              <img src="./images/yuho/g11.jpg" alt="하루의 온도를 닮은, 조용히 바라본 시선" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="11"
+            data-src="./images/yuho/g12.jpg"
+            data-webp="./images/yuho/g12.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g12.webp" type="image/webp" />
+              <img src="./images/yuho/g12.jpg" alt="작은 눈 안에 세상이 다 담기던 날" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="12"
+            data-src="./images/yuho/g13.jpg"
+            data-webp="./images/yuho/g13.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g13.webp" type="image/webp" />
+              <img src="./images/yuho/g13.jpg" alt="어제보다 조금 더 커 있던 하루의 풍경" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="13"
+            data-src="./images/yuho/g14.jpg"
+            data-webp="./images/yuho/g14.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g14.webp" type="image/webp" />
+              <img src="./images/yuho/g14.jpg" alt="가장 좋아하는 장난감, 가장 좋아하는 시간" width="1100" height="825" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="14"
+            data-src="./images/yuho/g15.jpg"
+            data-webp="./images/yuho/g15.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g15.webp" type="image/webp" />
+              <img src="./images/yuho/g15.jpg" alt="봄날의 오후, 햇살이 머물다 간 자리" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="15"
+            data-src="./images/yuho/g16.jpg"
+            data-webp="./images/yuho/g16.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g16.webp" type="image/webp" />
+              <img src="./images/yuho/g16.jpg" alt="처음으로 화창했던 날, 환하게 핀 얼굴" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="16"
+            data-src="./images/yuho/g17.jpg"
+            data-webp="./images/yuho/g17.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g17.webp" type="image/webp" />
+              <img src="./images/yuho/g17.jpg" alt="세상에서 가장 어렸던 시절의 한 장" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="17"
+            data-src="./images/yuho/g18.jpg"
+            data-webp="./images/yuho/g18.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g18.webp" type="image/webp" />
+              <img src="./images/yuho/g18.jpg" alt="신생아의 오후, 숨소리만 고요했던 시간" width="1100" height="825" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="18"
+            data-src="./images/yuho/g19.jpg"
+            data-webp="./images/yuho/g19.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g19.webp" type="image/webp" />
+              <img src="./images/yuho/g19.jpg" alt="처음으로 지어 본, 불완전하고 예쁜 미소" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="19"
+            data-src="./images/yuho/g20.jpg"
+            data-webp="./images/yuho/g20.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g20.webp" type="image/webp" />
+              <img src="./images/yuho/g20.jpg" alt="처음으로 몸을 움직이기 시작하던 날" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="21"
+            data-src="./images/yuho/yuho-01.jpg"
+            data-webp="./images/yuho/yuho-01.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-01.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-01.jpg" alt="첫 여름 햇살, 선글라스 너머의 작은 미소" width="1600" height="1200" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="22"
+            data-src="./images/yuho/g22.jpg"
+            data-webp="./images/yuho/g22.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g22.webp" type="image/webp" />
+              <img src="./images/yuho/g22.jpg" alt="가장 어린 밤, 가장 깊이 잠든 얼굴" width="825" height="1100" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="23"
+            data-src="./images/yuho/yuho-02.jpg"
+            data-webp="./images/yuho/yuho-02.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-02.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-02.jpg" alt="그림책 사이로 웃음이 흐르던 작은 터널" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="24"
+            data-src="./images/yuho/yuho-03.jpg"
+            data-webp="./images/yuho/yuho-03.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-03.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-03.jpg" alt="한 살의 주인공, 오늘을 위한 환한 웃음" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="25"
+            data-src="./images/yuho/yuho-04.jpg"
+            data-webp="./images/yuho/yuho-04.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-04.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-04.jpg" alt="잠든 얼굴에 머물던, 가장 처음의 미소" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="26"
+            data-src="./images/yuho/yuho-05.jpg"
+            data-webp="./images/yuho/yuho-05.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-05.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-05.jpg" alt="바운서 안에서 세상보다 깊이 잠든 오후" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="27"
+            data-src="./images/yuho/yuho-06.jpg"
+            data-webp="./images/yuho/yuho-06.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-06.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-06.jpg" alt="스물세 번째 날, 가장 작았던 어느 오후" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="28"
+            data-src="./images/yuho/yuho-07.jpg"
+            data-webp="./images/yuho/yuho-07.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-07.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-07.jpg" alt="카메라를 향해 처음으로 시선을 두던 시간" width="1600" height="1200" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="29"
+            data-src="./images/yuho/yuho-08.jpg"
+            data-webp="./images/yuho/yuho-08.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-08.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-08.jpg" alt="백 번째 아침, 작은 토끼가 세상을 보던 날" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="30"
+            data-src="./images/yuho/yuho-09.jpg"
+            data-webp="./images/yuho/yuho-09.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/yuho-09.webp" type="image/webp" />
+              <img src="./images/yuho/yuho-09.jpg" alt="밝게 웃는 얼굴, 하루를 환하게 만든 미소" width="1200" height="1600" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="31"
+            data-src="./images/yuho/g24.jpg"
+            data-webp="./images/yuho/g24.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g24.webp" type="image/webp" />
+              <img src="./images/yuho/g24.jpg" alt="다섯 번째 달의 햇살, 처음으로 바람을 느끼던 날" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="32"
+            data-src="./images/yuho/g25.jpg"
+            data-webp="./images/yuho/g25.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g25.webp" type="image/webp" />
+              <img src="./images/yuho/g25.jpg" alt="늦은 오후, 빛이 천천히 내려앉던 시간" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="33"
+            data-src="./images/yuho/g26.jpg"
+            data-webp="./images/yuho/g26.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g26.webp" type="image/webp" />
+              <img src="./images/yuho/g26.jpg" alt="처음 만나던 봄의 끝, 그리고 여름의 시작" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="34"
+            data-src="./images/yuho/g27.jpg"
+            data-webp="./images/yuho/g27.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g27.webp" type="image/webp" />
+              <img src="./images/yuho/g27.jpg" alt="작은 손이 처음으로 닿았던 자리의 온기" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="35"
+            data-src="./images/yuho/g28.jpg"
+            data-webp="./images/yuho/g28.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g28.webp" type="image/webp" />
+              <img src="./images/yuho/g28.jpg" alt="스물다섯 번째 날, 가장 길었던 한 낮의 끝" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="36"
+            data-src="./images/yuho/g29.jpg"
+            data-webp="./images/yuho/g29.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g29.webp" type="image/webp" />
+              <img src="./images/yuho/g29.jpg" alt="봄 햇살과 웃음이 한데 어울린 한 조각" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="37"
+            data-src="./images/yuho/g30.jpg"
+            data-webp="./images/yuho/g30.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g30.webp" type="image/webp" />
+              <img src="./images/yuho/g30.jpg" alt="여섯 번째 달의 아침, 눈을 뜨자 마주한 빛" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="38"
+            data-src="./images/yuho/g31.jpg"
+            data-webp="./images/yuho/g31.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g31.webp" type="image/webp" />
+              <img src="./images/yuho/g31.jpg" alt="유호가 가장 좋아하던, 반짝이던 어떤 시간" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="39"
+            data-src="./images/yuho/g32.jpg"
+            data-webp="./images/yuho/g32.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g32.webp" type="image/webp" />
+              <img src="./images/yuho/g32.jpg" alt="작은 일상이 모여, 한 해가 되던 장면" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="40"
+            data-src="./images/yuho/g33.jpg"
+            data-webp="./images/yuho/g33.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g33.webp" type="image/webp" />
+              <img src="./images/yuho/g33.jpg" alt="처음 함께한 넓은 풍경, 우리 셋의 하루" width="1320" height="743" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="41"
+            data-src="./images/yuho/g34.jpg"
+            data-webp="./images/yuho/g34.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/g34.webp" type="image/webp" />
+              <img src="./images/yuho/g34.jpg" alt="여름이 처음으로 문을 열어 준 날" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="42"
+            data-src="./images/yuho/g35.jpg"
+            data-webp="./images/yuho/g35.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="up"
+          >
+            <picture>
+              <source srcset="./images/yuho/g35.webp" type="image/webp" />
+              <img src="./images/yuho/g35.jpg" alt="환하게 웃은 한낮, 빛이 머금은 미소" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="43"
+            data-src="./images/yuho/g36.jpg"
+            data-webp="./images/yuho/g36.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="left"
+          >
+            <picture>
+              <source srcset="./images/yuho/g36.webp" type="image/webp" />
+              <img src="./images/yuho/g36.jpg" alt="향살이 잠시 머물다 간, 고요한 오후" width="990" height="1320" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+          <button
+            class="masonry__item"
+            type="button"
+            role="listitem"
+            data-gallery-index="44"
+            data-src="./images/yuho/m-134.jpg"
+            data-webp="./images/yuho/m-134.webp"
+            aria-label="사진 크게 보기"
+            data-reveal="right"
+          >
+            <picture>
+              <source srcset="./images/yuho/m-134.webp" type="image/webp" />
+              <img src="./images/yuho/m-134.jpg" alt="여름의 끝, 가장 길고 따뜻했던 하루" width="1200" height="841" loading="lazy" decoding="async" />
+            </picture>
+          </button>
+        </div>
+      </section>
+
+      <!-- 6. Invitation -->
+      <section class="section invite" aria-labelledby="invite-title">
+        <div class="section__inner reveal">
+          <p class="section-label">Invitation</p>
+          <h2 id="invite-title" class="display-title display-title--sm" data-char-reveal>The Day</h2>
+        </div>
+
+        <div class="card invite__card reveal reveal--delay-1">
+          <dl class="invite__list">
+            <div class="invite__row">
+              <dt>Date</dt>
+              <dd>
+                <strong>2026년 8월 17일 월요일</strong>
+                <span>August 17, 2026</span>
+              </dd>
+            </div>
+            <div class="invite__row">
+              <dt>Time</dt>
+              <dd>
+                <strong>오전 11:30 – 오후 1:30</strong>
+                <span>11:30 AM – 1:30 PM</span>
+              </dd>
+            </div>
+            <div class="invite__row">
+              <dt>Place</dt>
+              <dd>
+                <strong>더우미제 스튜디오</strong>
+                <span>경기도 용인시 기흥구 사은로 175 (지곡동)</span>
+              </dd>
+            </div>
+          </dl>
+
+          <button class="btn btn--primary" type="button" data-calendar>
+            일정 캘린더에 저장
+          </button>
+        </div>
+      </section>
+
+      <!-- 7. Location -->
+      <section class="section location" aria-labelledby="location-title">
+        <div class="section__inner reveal">
+          <p class="section-label">Location</p>
+          <h2 id="location-title" class="display-title display-title--sm" data-char-reveal>Where We Meet</h2>
+          <p class="location__name" data-line-reveal>더우미제 스튜디오</p>
+          <address class="location__address">경기도 용인시 기흥구 사은로 175 (지곡동)</address>
+        </div>
+
+        <div
+          class="map reveal reveal--delay-1"
+          id="map"
+          data-map
+          data-map-lat="37.25591864613"
+          data-map-lng="127.12469339629"
+          data-kakao-key="7336ac480b0866f199c0d1a9bedb898b"
+        >
+          <div class="map__fallback">
+            <svg class="map__pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+              <path d="M12 21s-6.5-5.2-6.5-10a6.5 6.5 0 0 1 13 0c0 4.8-6.5 10-6.5 10Z" />
+              <circle cx="12" cy="11" r="2.2" />
+            </svg>
+            <p class="map__fallback-name">더우미제 스튜디오</p>
+            <p class="map__fallback-address">경기도 용인시 기흥구 사은로 175 (지곡동)</p>
+            <a
+              class="map__fallback-link"
+              href="https://map.kakao.com/link/map/%EB%8D%94%EC%9A%B0%EB%AF%B8%EC%A0%9C%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4,37.25591864613,127.12469339629"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              카카오맵에서 보기
+            </a>
+          </div>
+        </div>
+
+        <div class="btn-row reveal reveal--delay-1" role="group" aria-label="지도 앱으로 길찾기">
+          <a
+            class="btn"
+            href="https://map.kakao.com/link/search/%EB%8D%94%EC%9A%B0%EB%AF%B8%EC%A0%9C%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            카카오맵
+          </a>
+          <a
+            class="btn"
+            href="https://map.naver.com/p/search/%EB%8D%94%EC%9A%B0%EB%AF%B8%EC%A0%9C%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            네이버<br>지도
+          </a>
+          <a
+            class="btn"
+            href="tmap://?rGoName=%EB%8D%94%EC%9A%B0%EB%AF%B8%EC%A0%9C%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4&amp;rGoY=37.25591864613&amp;rGoX=127.12469339629"
+          >
+            티맵
+          </a>
+        </div>
+
+        <div class="info-note reveal reveal--delay-1">
+          <h3>Parking</h3>
+          <p class="info-note__lead">
+            <strong>버스정류장 직전에 입구가 위치하고 있습니다.</strong>
+          </p>
+          <p>
+            스튜디오 인근에 주차 공간이 마련되어 있습니다.
+            주말에는 자리가 금방 찰 수 있으니, 조금 여유 있게 와 주시면 좋습니다.
+          </p>
+        </div>
+
+        <div class="info-note reveal reveal--delay-1">
+          <h3>Notice</h3>
+          <p>
+            11시 30분 전에 도착하시면 입장이 어려울 수 있으니, 인근 <strong>스타벅스 한국민속촌점</strong> 또는 <strong>달애울</strong> 카페를 이용해 주시면 감사하겠습니다.
+          </p>
+          <p>행사장으로 화환은 받지 않습니다.</p>
+        </div>
+      </section>
+
+      <!-- 8. Contact -->
+      <section class="section contact" aria-labelledby="contact-title">
+        <div class="section__inner reveal">
+          <p class="section-label">Contact</p>
+          <h2 id="contact-title" class="display-title display-title--sm" data-char-reveal>With Love</h2>
+          <p class="section-desc">궁금한 점이 있으시면 편하게 연락 주세요.</p>
+        </div>
+
+        <div class="contact__grid reveal reveal--delay-1">
+          <article class="contact__card">
+            <p class="contact__role">Father</p>
+            <h3 class="contact__name">이영선</h3>
+            <a class="contact__phone" href="tel:01024211322">010-2421-1322</a>
+            <div class="contact__actions">
+              <a class="btn btn--soft" href="tel:01024211322">전화</a>
+              <a class="btn btn--soft" href="sms:01024211322">문자</a>
+            </div>
+          </article>
+
+          <article class="contact__card">
+            <p class="contact__role">Mother</p>
+            <h3 class="contact__name">박은비</h3>
+            <a class="contact__phone" href="tel:01031339105">010-3133-9105</a>
+            <div class="contact__actions">
+              <a class="btn btn--soft" href="tel:01031339105">전화</a>
+              <a class="btn btn--soft" href="sms:01031339105">문자</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 9. Ending -->
+      <section class="section ending" aria-label="마무리">
+        <figure class="ending__photo reveal" data-reveal="clip" data-photo>
+          <picture>
+            <source srcset="./images/yuho/yuho-01.webp" type="image/webp" />
+            <img
+              src="./images/yuho/yuho-01.jpg"
+              alt="장난감을 든 채 행복하게 웃는 유호"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </figure>
+
+        <div class="ending__copy reveal reveal--delay-1">
+          <p class="ending__thanks" data-char-reveal>Thank You</p>
+          <p class="ending__text" data-line-reveal>
+            유호의 첫 생일을 함께해 주셔서 고맙습니다.
+          </p>
+        </div>
+
+        <footer class="footer">
+          <a class="footer__back" href="./index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            돌아가기
+          </a>
+          <p>유호 · First Birthday · 2026</p>
+        </footer>
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" data-lightbox hidden>
+      <div class="lightbox__backdrop" data-lightbox-close tabindex="-1"></div>
+      <div
+        class="lightbox__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label="사진 크게 보기"
+        tabindex="-1"
+      >
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="닫기">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M5 5l14 14M19 5L5 19" />
+          </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="이전 사진">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M15 5l-7 7 7 7" />
+          </svg>
+        </button>
+        <figure class="lightbox__figure">
+          <div class="lightbox__image" data-lightbox-image>
+            <picture>
+              <source data-webp-src type="image/webp" />
+              <img data-lightbox-img alt="" />
+            </picture>
+          </div>
+          <figcaption class="lightbox__caption" data-lightbox-caption></figcaption>
+        </figure>
+        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="다음 사진">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <p class="lightbox__counter" data-lightbox-counter aria-live="polite"></p>
+      </div>
+    </div>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

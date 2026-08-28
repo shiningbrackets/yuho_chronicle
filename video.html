@@ -28,22 +28,17 @@
           <h1 id="video-title" class="video-page__title">유호 성장 영상</h1>
           <p class="video-page__sub">2025.08.17 — 태어나서 첫 생일까지</p>
 
-          <div class="video-page__player">
-            <video
+          <div class="video-page__player" id="playerWrap">
+            <iframe
+              id="drivePlayer"
               class="video-page__video"
-              controls
-              playsinline
-              preload="metadata"
-              poster="./images/yuho/hero2-poster.webp"
-            >
-              <source src="./videos/yuho-growth.mp4" type="video/mp4" />
-              브라우저가 비디오를 지원하지 않습니다.
-            </video>
-            <button class="video-page__fullscreen" type="button" aria-label="전체화면" data-fullscreen>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3" />
-              </svg>
-            </button>
+              src="https://drive.google.com/file/d/1qUywZS4SDs4gPwJy5fF2ig0KcicCTpRC/preview"
+              title="유호 성장 영상"
+              allow="autoplay"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -61,14 +56,13 @@
 
     <script>
       (function () {
-        var btn = document.querySelector("[data-fullscreen]");
-        var video = document.querySelector(".video-page__video");
-        if (!btn || !video) return;
-        btn.addEventListener("click", function () {
-          if (video.requestFullscreen) video.requestFullscreen();
-          else if (video.webkitRequestFullscreen) video.webkitRequestFullscreen();
-          else if (video.msRequestFullscreen) video.msRequestFullscreen();
-        });
+        // ?d= 로 다른 Drive ID 테스트: video.html?d=1qUywZS4SDs4gPwJy5fF2ig0KcicCTpRC
+        var m = location.search.match(/[?&]d=([^&]+)/);
+        if (m) {
+          var id = decodeURIComponent(m[1]);
+          var f = document.getElementById("drivePlayer");
+          if (f && /^[A-Za-z0-9_-]{20,}$/.test(id)) f.src = "https://drive.google.com/file/d/" + id + "/preview";
+        }
       })();
     </script>
   </body>

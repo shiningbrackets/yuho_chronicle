@@ -1,2 +1,8 @@
 assets/yuho/contact-sheet.jpg
 .aider*
+# 원본 고화질 영상 - Git에 커밋하지 않음 (1.5GB, HLS로 대체)
+videos/260817_이유호성장영상.mp4
+# HLS 세그먼트 465MB - YouTube로 대체하므로 커밋하지 않음 (로컬 폴백용으로만 유지)
+videos/hls/
+# 레거시 저화질 MP4는 폴백용으로 유지하되, 필요 없으면 아래 주석 해제
+# videos/yuho-growth.mp4

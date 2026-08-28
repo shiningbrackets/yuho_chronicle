@@ -121,6 +121,7 @@ html {
   color-scheme: light;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
   /* Firefox + spec: thin, themed track.
      Mobile overlays still auto-hide but we get a calm tone
      on any device that shows it. */
@@ -148,7 +149,8 @@ body {
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 img {
@@ -217,7 +219,8 @@ button {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: clip;
+  overflow-x: clip;
 }
 
 .section {
@@ -1550,16 +1553,39 @@ p {
 .video-page__player {
   position: relative;
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
   border-radius: 12px;
+  overflow: clip;
   overflow: hidden;
+  /* prevent horizontal scroll from transform/radius on mobile */
+  contain: layout paint;
 }
 
 .video-page__video {
+  display: block;
   width: 100%;
   height: 100%;
+  max-width: 100%;
   object-fit: contain;
+  border: 0;
+  vertical-align: middle;
+}
+
+/* Google Drive preview iframe needs block + no extra chrome */
+.video-page__player iframe.video-page__video {
+  background: #000;
+}
+
+@media (max-width: 600px) {
+  .video-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .video-page__player {
+    border-radius: 10px;
+  }
 }
 
 .video-page__fullscreen {
@@ -1779,14 +1805,16 @@ p {
   /* Mobile browsers shrink 'vh' when the url bar changes height.
      dvh (dynamic viewport height) clamps to the visible viewport,
      so the backdrop paints edge-to-edge on iOS/Android Chrome. */
-  width: 100vw;
+  width: 100%;
   width: 100dvw;
+  max-width: 100%;
   height: 100vh;
   height: 100dvh;
   z-index: 100;
   display: grid;
   place-items: center;
   padding: 0;
+  overflow: clip;
 }
 
 .lightbox[hidden] {

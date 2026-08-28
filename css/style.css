@@ -150,7 +150,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: clip;
+  overscroll-behavior-x: none;
   max-width: 100%;
+  position: relative;
 }
 
 img {
@@ -221,6 +223,27 @@ button {
   margin: 0 auto;
   overflow: clip;
   overflow-x: clip;
+  max-width: 100%;
+}
+
+.master {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.chrono,
+.chrono__list,
+.video-page,
+.video-page__inner {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/* reveal transforms should not create scrollable overflow */
+.reveal,
+.masonry,
+.masonry__item {
+  max-width: 100%;
 }
 
 .section {
@@ -1802,11 +1825,7 @@ p {
 .lightbox {
   position: fixed;
   inset: 0;
-  /* Mobile browsers shrink 'vh' when the url bar changes height.
-     dvh (dynamic viewport height) clamps to the visible viewport,
-     so the backdrop paints edge-to-edge on iOS/Android Chrome. */
   width: 100%;
-  width: 100dvw;
   max-width: 100%;
   height: 100vh;
   height: 100dvh;

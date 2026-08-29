@@ -29,17 +29,20 @@
           <p class="video-page__sub">2025.08.17 — 태어나서 첫 생일까지</p>
 
           <div class="video-page__player" id="playerWrap">
-            <iframe
-              id="drivePlayer"
+            <video
+              id="releaseVideo"
               class="video-page__video"
-              src="https://drive.google.com/file/d/1qUywZS4SDs4gPwJy5fF2ig0KcicCTpRC/preview"
-              title="유호 성장 영상"
-              allow="autoplay"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
+              controls
+              playsinline
+              preload="metadata"
+              poster="./images/yuho/hero2-poster.webp"
+              crossorigin="anonymous"
+            ></video>
+            <div id="videoStatus" style="position:absolute;inset:0;display:grid;place-items:center;background:rgba(0,0,0,0.45);color:#fff;font-size:14px">불러오는 중…</div>
           </div>
+          <p style="margin-top:10px;text-align:center">
+            <a href="https://github.com/shiningbrackets/yuho_chronicle/releases" target="_blank" rel="noopener" style="color:var(--muted);font-size:13px;text-decoration:underline">GitHub Releases에서 직접 열기</a>
+          </p>
         </div>
       </section>
 
@@ -56,13 +59,50 @@
 
     <script>
       (function () {
-        // ?d= 로 다른 Drive ID 테스트: video.html?d=1qUywZS4SDs4gPwJy5fF2ig0KcicCTpRC
-        var m = location.search.match(/[?&]d=([^&]+)/);
-        if (m) {
-          var id = decodeURIComponent(m[1]);
-          var f = document.getElementById("drivePlayer");
-          if (f && /^[A-Za-z0-9_-]{20,}$/.test(id)) f.src = "https://drive.google.com/file/d/" + id + "/preview";
+        var video = document.getElementById("releaseVideo");
+        var status = document.getElementById("videoStatus");
+        // GitHub Releases 자산 URL — 업로드 후 실제 URL로 교체
+        // 예: https://github.com/shiningbrackets/yuho_chronicle/releases/download/v1.0-video/yuho-growth.mp4
+        // 또는 1080p 원본: .../yuho-growth-1080p.mp4
+        var RELEASE_MP4 = "https://github.com/shiningbrackets/yuho_chronicle/releases/download/v1.0-video/full-yuho-growth.mp4";
+        var FALLBACK_MP4 = "./videos/yuho-growth.mp4";
+
+        // ?r= 로 테스트 URL 주입: video.html?r=https://.../video.mp4
+        var m = location.search.match(/[?&]r=([^&]+)/);
+        if (m) RELEASE_MP4 = decodeURIComponent(m[1]);
+
+        // ?d= 로 Drive ID 테스트 (기존 호환)
+        var dm = location.search.match(/[?&]d=([^&]+)/);
+        if (dm) {
+          var id = decodeURIComponent(dm[1]);
+          if (/^[A-Za-z0-9_-]{20,}$/.test(id)) {
+            RELEASE_MP4 = "https://drive.google.com/uc?export=download&id=" + id;
+          }
         }
+
+        function useFallback() {
+          video.src = FALLBACK_MP4;
+          video.load();
+          if (status) status.style.display = "none";
+        }
+
+        // Releases URL이 아직 없으면 로컬 폴백
+        if (RELEASE_MP4.indexOf("REPLACE") !== -1) {
+          useFallback();
+          return;
+        }
+
+        video.src = RELEASE_MP4;
+        video.addEventListener("loadeddata", function () { if (status) status.style.display = "none"; });
+        video.addEventListener("error", function () {
+          // CORS/404 시 로컬 폴백
+          useFallback();
+          if (status) {
+            status.textContent = "Releases 로드 실패 — 로컬 영상으로 전환";
+            setTimeout(function(){ if(status) status.style.display="none"; }, 2000);
+          }
+        });
+        video.load();
       })();
     </script>
   </body>

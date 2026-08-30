@@ -242,6 +242,39 @@
   line-height: 1.85;
 }
 
+.ns-dream__desc + .ns-dream__desc {
+  margin-top: 12px;
+}
+
+.ns-dream__combo {
+  margin-top: 20px;
+  padding: 28px 24px;
+  background: rgba(191, 174, 147, 0.06);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 12px;
+}
+
+.ns-dream__combo h3 {
+  margin: 0 0 12px;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.ns-dream__combo p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+  word-break: keep-all;
+}
+
+.ns-dream__combo p + p {
+  margin-top: 12px;
+}
+
 /* ---------- Closing ---------- */
 
 .ns-closing__text {

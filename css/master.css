@@ -157,6 +157,69 @@
   height: auto;
 }
 
+/* Gallery — compact, editorial grid for many photos.
+   Keeps chronicle airy: 3-col square thumbs, subtle hover.
+   Single-photo case (.chrono__photo alone) stays large;
+   multi-photo case inside .chrono__gallery becomes small. */
+.chrono__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 420px;
+  margin-top: 18px;
+}
+
+.chrono__gallery .chrono__photo {
+  max-width: none;
+  margin: 0;
+  border-radius: 10px;
+  aspect-ratio: 1;
+  box-shadow: none;
+  border: 1px solid var(--line);
+  background: var(--card);
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: zoom-in;
+  text-decoration: none;
+}
+
+.chrono__gallery .chrono__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s var(--ease), filter 0.4s var(--ease);
+}
+
+.chrono__gallery .chrono__photo:hover img,
+.chrono__gallery .chrono__photo:focus-visible img {
+  transform: scale(1.05);
+}
+
+.chrono__gallery .chrono__photo:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.chrono__gallery .chrono__photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .chrono__gallery {
+    gap: 6px;
+    border-radius: 8px;
+  }
+  .chrono__gallery .chrono__photo {
+    border-radius: 8px;
+  }
+}
+
 /* Badge (anchor moments) */
 
 .chrono__badge {

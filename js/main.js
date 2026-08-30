@@ -532,11 +532,11 @@
       masonry.appendChild(item);
     });
 
-    // Re-fetch galleryItems for lightbox to use the new order
-    galleryItems = Array.prototype.slice.call(masonry.querySelectorAll(".masonry__item"));
+    // Re-fetch galleryItems for lightbox to use the new order (masonry + chrono)
+    galleryItems = Array.prototype.slice.call(document.querySelectorAll(".masonry__item, .chrono__gallery .chrono__photo"));
   })();
 
-  var galleryItems = Array.prototype.slice.call(document.querySelectorAll(".masonry__item"));
+  var galleryItems = Array.prototype.slice.call(document.querySelectorAll(".masonry__item, .chrono__gallery .chrono__photo"));
   var lightbox = document.querySelector("[data-lightbox]");
   var lightboxImage = lightbox && lightbox.querySelector("[data-lightbox-image]");
   var lightboxImg = lightbox && lightbox.querySelector("[data-lightbox-img]");
@@ -733,7 +733,13 @@
   }
 
   galleryItems.forEach(function (item, index) {
-    item.addEventListener("click", function () {
+    item.addEventListener("click", function (event) {
+      if (event) {
+        // chrono gallery are <a> — prevent navigation, use lightbox
+        if (item.tagName === "A") {
+          event.preventDefault();
+        }
+      }
       openLightbox(index);
     });
   });
